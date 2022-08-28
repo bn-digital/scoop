@@ -8,7 +8,7 @@ More on [Github page](https://github.com/ScoopInstaller/Scoop)
 
 To install Scoop, open Windows `PowerShell` and execute following script
 
-```bash
+```PowerShell
 iex "& {$(irm get.scoop.sh)}"
 ```
 
@@ -16,7 +16,7 @@ iex "& {$(irm get.scoop.sh)}"
 
 In Scoop, buckets are collections of apps. Or, to be more specific, a bucket is a Git repository containing JSON app manifests which describe how to install an app.
 
-```powershell
+```shell-script
 scoop bucket add extras
 scoop bucket add java
 scoop bucket add php
@@ -24,15 +24,35 @@ scoop bucket add nonportable
 scoop bucket add versions
 ```
 
-#### Bundles
+### Bundles
+
+This repository acts as bucket as well, with main purpose - distribute software required for @bn-digital/sde & @bn-digital/sre. To add this bucket, run:
+
+```powershell
+scoop bucket add bndigital https://github.com/bn-digital/scoop
+```
+
+To install required software for [**@bn-digital/engineers**](https://github.com/orgs/bn-digital/teams/engineers), run 
+
+```powershell
+scoop install bn-common
+```
+
+To install required software for [**@bn-digital/sde**](https://github.com/orgs/bn-digital/teams/sde), run 
+
+```powershell
+scoop install bn-dev
+```
+
+To install required software for [**@bn-digital/sre**](https://github.com/orgs/bn-digital/teams/sre), run 
+
+```powershell
+scoop install bn-ops
+```
 
 To install app bundle, open Windows `PowerShell` and execute following scripts for each required bundle
 
 ##### Common
-
-```powershell
-scoop install https://cloud.bndigital.dev/scoop/apps/bn-common.json
-```
 
 - [**7zip**](https://www.7-zip.org/) - is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives".
 - [**bind**](https://downloads.isc.org/isc/bind9/9.18.6/doc/arm/html/) - Versatile, classic, complete name server software.
@@ -59,10 +79,6 @@ scoop install https://cloud.bndigital.dev/scoop/apps/bn-common.json
 
 ##### Development
 
-```powershell
-scoop install https://cloud.bndigital.dev/scoop/apps/bn-dev.json
-```
-
 - [**figma**](https://figma.en.softonic.com/) - is a collaborative browser-based interface design tool, with additional offline features enabled by desktop applications for macOS and Windows. (https://github.com/figma)
 - [**insomnia**](https://insomnia.rest/download) - is an open-source, cross-platform API client for GraphQL, REST, and gRPC.
 - [**jetbrains-toolbox**](https://www.jetbrains.com/toolbox-app/) - Manage your IDEs
@@ -70,10 +86,6 @@ scoop install https://cloud.bndigital.dev/scoop/apps/bn-dev.json
 - [**ngrok**](https://ngrok.com/) - is the programmable network edge that adds connectivity,security, and observability to your apps with no code changes.
 
 ##### Operations
-
-```powershell
-scoop install https://cloud.bndigital.dev/scoop/apps/bn-ops.json
-```
 
 - [**aws**](https://github.com/aws/aws-cli) - is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. These cloud computing web services provide distributed computing processing capacity and software tools via AWS server farms.
 - [**cosign**](https://github.com/sigstore/cosign) - aims to make signatures invisible infrastructure.
