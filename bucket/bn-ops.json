@@ -1,10 +1,10 @@
 {
   "version": "1.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/bn-digital/home",
-  "url": "https://cloud.bndigital.dev/scoop/apps/bn-ops.json",
-  "hash": "224c74010c5e1fd7f30f6773503c09dc075893905c42ef06b3acdd3399c1d0ce",
+  "homepage": "https://github.com/bn-digital/scoop",
+  "url": "https://raw.githubusercontent.com/bn-digital/scoop/latest/bucket/bn-ops.json",
   "description": "BN Digital Ops App Bundle",
+  "hash": "312429061a347ce1fa5552b337a9eb1bb8119b5953f2bdc17f6d2a7364cc9a4d",
   "depends": [
     "aws",
     "gcloud",
