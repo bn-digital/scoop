@@ -4,7 +4,6 @@
   "homepage": "https://github.com/bn-digital/scoop",
   "url": "https://raw.githubusercontent.com/bn-digital/scoop/latest/bucket/bn-ops.json",
   "description": "BN Digital Ops App Bundle",
-  "hash": "b6a133b94afa0e3a1c40d488c71221f9dc190ae28b3e3a9e4a018827f6c44af9",
   "depends": [
     "aws",
     "gcloud",

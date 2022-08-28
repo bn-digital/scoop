@@ -3,7 +3,6 @@
   "license": "MIT",
   "homepage": "https://github.com/bn-digital/home",
   "url": "https://raw.githubusercontent.com/bn-digital/scoop/latest/bucket/bn-common.json",
-  "hash": "ec8da88190449e9a733aa1f4b5cd75765dac5ee385afcfec6a98cd3036c72054",
   "description": "BN Digital Common App Bundle",
   "depends": [
     "7zip",
