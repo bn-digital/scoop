@@ -1,8 +1,9 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/bn-digital/home",
   "url": "https://cloud.bndigital.dev/scoop/apps/bn-common.json",
+  "hash": "b6a133b94afa0e3a1c40d488c71221f9dc190ae28b3e3a9e4a018827f6c44af9",
   "description": "BN Digital Common App Bundle",
   "depends": [
     "7zip",

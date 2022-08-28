@@ -1,11 +1,13 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/bn-digital/home",
   "url": "https://cloud.bndigital.dev/scoop/apps/bn-ops.json",
+  "hash": "224c74010c5e1fd7f30f6773503c09dc075893905c42ef06b3acdd3399c1d0ce",
   "description": "BN Digital Ops App Bundle",
   "depends": [
     "aws",
+    "gcloud",
     "cosign",
     "docker-compose",
     "doctl",
